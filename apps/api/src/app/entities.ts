@@ -5,6 +5,9 @@ import { Country } from './modules/country/country.entity';
 import { Page } from './modules/page/page.entity';
 import { Setting } from './modules/setting/setting.entity';
 import { User } from './modules/user/user.entity';
+import { Product } from './modules/product/product.entity';
+import { ProductCategory } from './modules/product-category/product-category.entity';
+import { ProductBrand } from './modules/product-brand/product-brand.entity';
 
 
 export const ALL_ENTITIES = [
@@ -14,4 +17,7 @@ export const ALL_ENTITIES = [
     Page,
     Country,
     Setting,
+    Product,
+    ProductCategory,
+    ProductBrand,
 ];

@@ -11,3 +11,6 @@ export * from './template.service';
 export * from './template-layout.service';
 export * from './setting.service';
 export * from './seeder.service';
+export * from './product.service';
+export * from './product-category.service';
+export * from './product-brand.service';

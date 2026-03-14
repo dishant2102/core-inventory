@@ -8,3 +8,6 @@ export * from './use-page';
 export * from './use-template';
 export * from './use-template-layout';
 export * from './use-setting';
+export * from './use-product';
+export * from './use-product-category';
+export * from './use-product-brand';

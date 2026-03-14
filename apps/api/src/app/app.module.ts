@@ -25,6 +25,9 @@ import { NestAuthConfigService } from './core/service/nest-auth-config.service';
 import { FileStorageEnum, NestFileStorageModule } from '@ackplus/nest-file-storage';
 import path from 'path';
 import { PermissionModule } from './modules/permission/permission.module';
+import { ProductModule } from './modules/product/product.module';
+import { ProductCategoryModule } from './modules/product-category/product-category.module';
+import { ProductBrandModule } from './modules/product-brand/product-brand.module';
 
 
 @Module({
@@ -103,6 +106,9 @@ import { PermissionModule } from './modules/permission/permission.module';
         TemplateModule,
         SettingModule,
         EventsModule,
+        ProductModule,
+        ProductCategoryModule,
+        ProductBrandModule,
     ],
     controllers: [AppController],
     providers: [AppService],

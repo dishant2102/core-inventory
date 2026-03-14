@@ -23,3 +23,9 @@ export * from './lib/page';
 export * from './lib/template';
 
 export * from './lib/template-layout';
+
+export * from './lib/product';
+
+export * from './lib/product-category';
+
+export * from './lib/product-brand';
