@@ -74,6 +74,33 @@ export class PermissionSeeder implements Seeder {
                     PermissionsEnum.UPDATE_SETTINGS,
                 ],
             },
+            {
+                category: 'Products',
+                permissions: [
+                    PermissionsEnum.ACCESS_PRODUCTS,
+                    PermissionsEnum.CREATE_PRODUCTS,
+                    PermissionsEnum.UPDATE_PRODUCTS,
+                    PermissionsEnum.DELETE_PRODUCTS,
+                ],
+            },
+            {
+                category: 'Product Categories',
+                permissions: [
+                    PermissionsEnum.ACCESS_PRODUCT_CATEGORIES,
+                    PermissionsEnum.CREATE_PRODUCT_CATEGORIES,
+                    PermissionsEnum.UPDATE_PRODUCT_CATEGORIES,
+                    PermissionsEnum.DELETE_PRODUCT_CATEGORIES,
+                ],
+            },
+            {
+                category: 'Product Brands',
+                permissions: [
+                    PermissionsEnum.ACCESS_PRODUCT_BRANDS,
+                    PermissionsEnum.CREATE_PRODUCT_BRANDS,
+                    PermissionsEnum.UPDATE_PRODUCT_BRANDS,
+                    PermissionsEnum.DELETE_PRODUCT_BRANDS,
+                ],
+            },
         ];
 
         const flatPermissions: {

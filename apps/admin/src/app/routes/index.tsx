@@ -47,6 +47,16 @@ const EditTemplate = Loadable(lazy(() => import('../pages/template/edit-template
 const TemplateLayoutList = Loadable(lazy(() => import('../pages/template-layout/template-layout-list')));
 const EditTemplateLayout = Loadable(lazy(() => import('../pages/template-layout/edit-template-layout')));
 
+// Product
+const ProductList = Loadable(lazy(() => import('../pages/product/product-list')));
+const ProductView = Loadable(lazy(() => import('../pages/product/product-view')));
+
+// Product Category
+const ProductCategoryList = Loadable(lazy(() => import('../pages/product-category/product-category-list')));
+
+// Product Brand
+const ProductBrandList = Loadable(lazy(() => import('../pages/product-brand/product-brand-list')));
+
 // const Test = Loadable(lazy(() => import('../pages/test/test-list-page')));
 export default function Router() {
     // const routes = useMemo(() => getPluginRoutes(), []);
@@ -182,6 +192,31 @@ export default function Router() {
                 {
                     path: 'template-layouts/edit/:templateLayoutId',
                     element: <EditTemplateLayout />,
+                },
+                {
+                    path: 'product',
+                    children: [
+                        {
+                            index: true,
+                            element: <ProductList />,
+                        },
+                        {
+                            path: 'view/:productId',
+                            element: <ProductView />,
+                        },
+                        {
+                            path: 'edit/:productId',
+                            element: <ProductView />,
+                        },
+                    ],
+                },
+                {
+                    path: 'product-category',
+                    element: <ProductCategoryList />,
+                },
+                {
+                    path: 'brand',
+                    element: <ProductBrandList />,
                 },
                 {
                     path: 'settings',

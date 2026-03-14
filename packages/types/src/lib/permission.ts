@@ -65,5 +65,18 @@ export enum PermissionsEnum {
     UPDATE_TEMPLATE_LAYOUTS = 'update-template-layouts',
     DELETE_TEMPLATE_LAYOUTS = 'delete-template-layouts',
 
+    ACCESS_PRODUCTS = 'access-products',
+    CREATE_PRODUCTS = 'create-products',
+    UPDATE_PRODUCTS = 'update-products',
+    DELETE_PRODUCTS = 'delete-products',
 
+    ACCESS_PRODUCT_CATEGORIES = 'access-product-categories',
+    CREATE_PRODUCT_CATEGORIES = 'create-product-categories',
+    UPDATE_PRODUCT_CATEGORIES = 'update-product-categories',
+    DELETE_PRODUCT_CATEGORIES = 'delete-product-categories',
+
+    ACCESS_PRODUCT_BRANDS = 'access-product-brands',
+    CREATE_PRODUCT_BRANDS = 'create-product-brands',
+    UPDATE_PRODUCT_BRANDS = 'update-product-brands',
+    DELETE_PRODUCT_BRANDS = 'delete-product-brands',
 }

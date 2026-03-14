@@ -79,6 +79,30 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
             },
         ],
     },
+    {
+        id: 'products',
+        title: 'Product',
+        icon: <Icon icon={IconEnum.Package2} />,
+        group: 'Products Management',
+        permissions: [PermissionsEnum.ACCESS_PRODUCTS, PermissionsEnum.ACCESS_PRODUCT_CATEGORIES, PermissionsEnum.ACCESS_PRODUCT_BRANDS],
+        children: [
+            {
+                id: 'products',
+                title: 'All Products',
+                path: PATH_DASHBOARD.products.root,
+            },
+            {
+                id: 'product-categories',
+                title: 'Categories',
+                path: PATH_DASHBOARD.products.category.root,
+            },
+            {
+                id: 'product-brands',
+                title: 'Brands',
+                path: PATH_DASHBOARD.products.brand.root,
+            },
+        ],
+    },
     // {
     //     id: 'test',
     //     title: 'Test',
