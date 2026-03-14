@@ -2,6 +2,7 @@
 import { Box, Link, BoxProps, useTheme } from '@mui/material';
 import { forwardRef, useMemo } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
+import logoImage from '../../assets/image/odoo coreInventory logo.png';
 
 
 export interface LogoProps extends BoxProps {
@@ -31,7 +32,7 @@ export const Logo = forwardRef<HTMLDivElement, LogoProps>(
                 component="img"
                 width={logoWidth}
                 height={logoHeight || 'auto'}
-                src={"/"}
+                src={logoImage}
                 alt="logo"
                 sx={sx}
             />
