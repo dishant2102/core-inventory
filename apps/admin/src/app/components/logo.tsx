@@ -2,7 +2,7 @@
 import { Box, Link, BoxProps, useTheme } from '@mui/material';
 import { forwardRef, useMemo } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import logoImage from '../../assets/image/odoo coreInventory logo.png';
+import logoImage from '../../assets/image/odoo_coreInventory_logo.png';
 
 
 export interface LogoProps extends BoxProps {
