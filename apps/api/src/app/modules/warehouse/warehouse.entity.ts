@@ -51,8 +51,8 @@ export class Warehouse extends CoreEntity {
     @ApiProperty({ type: String, nullable: true })
     @IsString()
     @IsOptional()
-    @Column({ nullable: true, name: 'zip_code' })
-    zip_code?: string;
+    @Column({ nullable: true })
+    zipCode?: string;
 
     @ApiProperty({ type: String, nullable: true })
     @IsEmail()
