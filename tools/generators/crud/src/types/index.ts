@@ -44,7 +44,6 @@ export interface GeneratorConfig {
     outputApps?: {
         api?: boolean;
         admin?: boolean;
-        web?: boolean;
     };
     implementationType?: 'nest-crud' | 'custom';
     viewType?: 'page' | 'dialog' | 'drawer';
