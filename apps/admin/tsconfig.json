@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "allowJs": false,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strictNullChecks": false
+    },
+    "files": [],
+    "include": [],
+    "references": [
+        {
+            "path": "./tsconfig.app.json"
+        },
+        {
+            "path": "./tsconfig.spec.json"
+        },
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ],
+    "extends": "../../tsconfig.base.json"
+}

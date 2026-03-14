@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "noEmit": false,
+        "outDir": "../../dist/out-tsc/types",
+        "declaration": true,
+        "types": ["node"]
+    },
+    "include": ["src/**/*.ts"]
+}

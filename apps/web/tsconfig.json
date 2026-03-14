@@ -1,0 +1,69 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "jsx": "preserve",
+        "strict": true,
+        "noEmit": true,
+        "emitDeclarationOnly": false,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "types": [
+            "jest",
+            "node"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "@web/*": [
+                "./src/*"
+            ],
+            "@ui/*": [
+                "./src/components/ui/*"
+            ],
+            "@sections/*": [
+                "./src/sections/*"
+            ],
+            "@libs/utils": [
+                "../../packages/utils/src"
+            ],
+            "@libs/types": [
+                "../../packages/types/src"
+            ],
+            "@libs/react-shared": [
+                "../../packages/react-shared/src"
+            ]
+        }
+    },
+    "include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "../../apps/web/.next/types/**/*.ts",
+        "../../dist/apps/web/.next/types/**/*.ts",
+        "next-env.d.ts",
+        ".next/types/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "jest.config.ts",
+        "**/*.spec.ts",
+        "**/*.test.ts"
+    ]
+}
