@@ -36,7 +36,7 @@ export class UserSeeder implements Seeder {
             {
                 firstName: 'Dishant',
                 lastName: 'Makwana',
-                email: 'chetan@ackplus.com',
+                email: 'makwanadishant644@gmail.com',
                 password: 'Admin@123',
                 isSuperUser: true,
                 roles: [RoleNameEnum.SUPER_ADMIN],
