@@ -107,7 +107,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
         id: 'warehouse',
         title: 'Warehouse',
         path: PATH_DASHBOARD.warehouse.root,
-        icon: <Icon icon={IconEnum.Warehouse} />,
+        icon: <Icon icon={IconEnum.Building2} />,
         group: 'Inventory',
         permissions: [PermissionsEnum.ACCESS_PRODUCTS],
         activePaths: [PATH_DASHBOARD.warehouse.root],

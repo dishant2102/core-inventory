@@ -143,7 +143,7 @@ function WarehouseView() {
                 <Grid size={{ xs: 12, md: 7 }}>
                     <Stack spacing={3}>
 
-                        {/* Basic Info */}
+                        {/* Warehouse Info + Address combined */}
                         <InfoCard
                             title="Warehouse Information"
                             icon={<Icon icon={IconEnum.Package} size="small" />}
@@ -168,18 +168,13 @@ function WarehouseView() {
                                         />
                                     </Box>
                                 </Grid>
-                            </Grid>
-                        </InfoCard>
 
-                        {/* Address */}
-                        <InfoCard
-                            title="Address"
-                            icon={<Icon icon={IconEnum.MapPin} size="small" />}
-                            editButton
-                            onEdit={handleEditWarehouse}
-                            showDivider
-                        >
-                            <Grid container spacing={2} sx={{ pt: 1 }}>
+                                <Grid size={{ xs: 12 }} sx={{ pt: 1 }}>
+                                    <Divider textAlign="left">
+                                        <Typography variant="caption" color="text.secondary">Address</Typography>
+                                    </Divider>
+                                </Grid>
+
                                 <Grid size={{ xs: 12 }}>
                                     <ViewDetail variant="block" label="Street Address" value={warehouse?.address} />
                                 </Grid>
@@ -197,7 +192,6 @@ function WarehouseView() {
                                 </Grid>
                             </Grid>
                         </InfoCard>
-
                     </Stack>
                 </Grid>
 
