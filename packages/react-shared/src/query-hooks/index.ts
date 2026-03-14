@@ -11,3 +11,5 @@ export * from './use-setting';
 export * from './use-product';
 export * from './use-product-category';
 export * from './use-product-brand';
+export * from './use-warehouse';
+export * from './use-location';

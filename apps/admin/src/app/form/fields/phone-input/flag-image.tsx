@@ -39,7 +39,7 @@ function FlagFallback({ iso }: { iso?: string }) {
 
 function FlagImageComponent({ iso }: FlagImageProps) {
     const [imageError, setImageError] = useState(false);
-    const flagSrc = iso ? ASSETS.flags.getFlag(iso) : '';
+    const flagSrc = iso ? ASSETS?.flags?.getFlag(iso) : '';
 
     // Reset error state when iso or resolved src changes (e.g. country change)
     useEffect(() => {

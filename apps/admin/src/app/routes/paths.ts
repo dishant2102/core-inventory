@@ -72,6 +72,10 @@ export const PATH_DASHBOARD = {
         edit: (id: string) => path(ROOTS_DASHBOARD, `/customer/edit/${id}`),
         create: path(ROOTS_DASHBOARD, '/customer/create'),
     },
+    warehouse: {
+        root: path(ROOTS_DASHBOARD, '/warehouse'),
+        view: (id: string) => path(ROOTS_DASHBOARD, `/warehouse/view/${id}`),
+    },
     location: {
         root: path(ROOTS_DASHBOARD, '/settings/location'),
         add: path(ROOTS_DASHBOARD, '/settings/location/add'),
