@@ -1,4 +1,4 @@
-import { logoWhiteSvg, logoSvg } from '@admin/assets';
+// import { logoWhiteSvg, logoSvg } from '@admin/assets';
 import { Box, Link, BoxProps, useTheme } from '@mui/material';
 import { forwardRef, useMemo } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
@@ -22,16 +22,16 @@ export const Logo = forwardRef<HTMLDivElement, LogoProps>(
             return (height ?? null);
         }, [height]);
         // const logoHeight = small ? 32 : 48;
-        const path = useMemo(() => {
-            return isDark ? logoWhiteSvg : logoSvg;
-        }, []);
+        // const path = useMemo(() => {
+        //     return isDark ? logoWhiteSvg : logoSvg;
+        // }, []);
 
         const LogoIcon = () => (
             <Box
                 component="img"
                 width={logoWidth}
                 height={logoHeight || 'auto'}
-                src={path}
+                src={"/"}
                 alt="logo"
                 sx={sx}
             />
