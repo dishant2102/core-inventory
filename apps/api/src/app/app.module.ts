@@ -28,6 +28,7 @@ import { PermissionModule } from './modules/permission/permission.module';
 import { ProductModule } from './modules/product/product.module';
 import { ProductCategoryModule } from './modules/product-category/product-category.module';
 import { ProductBrandModule } from './modules/product-brand/product-brand.module';
+import { WarehouseModule } from './modules/warehouse/warehouse.module';
 
 
 @Module({
@@ -109,6 +110,7 @@ import { ProductBrandModule } from './modules/product-brand/product-brand.module
         ProductModule,
         ProductCategoryModule,
         ProductBrandModule,
+        WarehouseModule,
     ],
     controllers: [AppController],
     providers: [AppService],
