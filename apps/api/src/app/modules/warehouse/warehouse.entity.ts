@@ -1,14 +1,20 @@
 import { ApiProperty } from '@nestjs/swagger';
 import {
+    IsEmail,
+    IsEnum,
     IsOptional,
     IsString,
-    IsEmail,
-    IsBoolean,
 } from 'class-validator';
-import { Column, Entity } from 'typeorm';
+import { Column, Entity, OneToMany } from 'typeorm';
 
 import { CoreEntity } from '../../core/typeorm/core.entity';
+import { Location } from '../location/location.entity';
 
+
+export enum WarehouseStatus {
+    ACTIVE = 'active',
+    INACTIVE = 'inactive',
+}
 
 @Entity()
 export class Warehouse extends CoreEntity {
@@ -66,10 +72,14 @@ export class Warehouse extends CoreEntity {
     @Column({ nullable: true })
     phone?: string;
 
-    @ApiProperty({ type: String, nullable: true })
-    @IsString()
+    @ApiProperty({ enum: WarehouseStatus, default: WarehouseStatus.ACTIVE })
+    @IsEnum(WarehouseStatus)
     @IsOptional()
-    @Column({ nullable: true })
-    status?: string;
+    @Column({ type: 'enum', enum: WarehouseStatus, default: WarehouseStatus.ACTIVE })
+    status?: WarehouseStatus;
+
+    @ApiProperty({ type: () => [Location], nullable: true })
+    @OneToMany(() => Location, (location) => location.warehouse, { nullable: true })
+    locations?: Location[];
 
 }

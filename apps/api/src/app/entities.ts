@@ -9,6 +9,7 @@ import { Product } from './modules/product/product.entity';
 import { ProductCategory } from './modules/product-category/product-category.entity';
 import { ProductBrand } from './modules/product-brand/product-brand.entity';
 import { Warehouse } from './modules/warehouse/warehouse.entity';
+import { Location } from './modules/location/location.entity';
 
 
 export const ALL_ENTITIES = [
@@ -22,4 +23,5 @@ export const ALL_ENTITIES = [
     ProductCategory,
     ProductBrand,
     Warehouse,
+    Location,
 ];

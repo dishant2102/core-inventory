@@ -103,6 +103,15 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
             },
         ],
     },
+    {
+        id: 'warehouse',
+        title: 'Warehouse',
+        path: PATH_DASHBOARD.warehouse.root,
+        icon: <Icon icon={IconEnum.Warehouse} />,
+        group: 'Inventory',
+        permissions: [PermissionsEnum.ACCESS_PRODUCTS],
+        activePaths: [PATH_DASHBOARD.warehouse.root],
+    },
     // {
     //     id: 'test',
     //     title: 'Test',

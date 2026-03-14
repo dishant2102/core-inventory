@@ -57,6 +57,10 @@ const ProductCategoryList = Loadable(lazy(() => import('../pages/product-categor
 // Product Brand
 const ProductBrandList = Loadable(lazy(() => import('../pages/product-brand/product-brand-list')));
 
+// Warehouse
+const WarehouseList = Loadable(lazy(() => import('../pages/warehouse/warehouse-list')));
+const WarehouseView = Loadable(lazy(() => import('../pages/warehouse/warehouse-view')));
+
 // const Test = Loadable(lazy(() => import('../pages/test/test-list-page')));
 export default function Router() {
     // const routes = useMemo(() => getPluginRoutes(), []);
@@ -217,6 +221,19 @@ export default function Router() {
                 {
                     path: 'brand',
                     element: <ProductBrandList />,
+                },
+                {
+                    path: 'warehouse',
+                    children: [
+                        {
+                            index: true,
+                            element: <WarehouseList />,
+                        },
+                        {
+                            path: 'view/:warehouseId',
+                            element: <WarehouseView />,
+                        },
+                    ],
                 },
                 {
                     path: 'settings',

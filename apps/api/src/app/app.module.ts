@@ -29,6 +29,7 @@ import { ProductModule } from './modules/product/product.module';
 import { ProductCategoryModule } from './modules/product-category/product-category.module';
 import { ProductBrandModule } from './modules/product-brand/product-brand.module';
 import { WarehouseModule } from './modules/warehouse/warehouse.module';
+import { LocationModule } from './modules/location/location.module';
 
 
 @Module({
@@ -111,6 +112,7 @@ import { WarehouseModule } from './modules/warehouse/warehouse.module';
         ProductCategoryModule,
         ProductBrandModule,
         WarehouseModule,
+        LocationModule,
     ],
     controllers: [AppController],
     providers: [AppService],

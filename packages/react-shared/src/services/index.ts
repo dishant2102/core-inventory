@@ -14,3 +14,5 @@ export * from './seeder.service';
 export * from './product.service';
 export * from './product-category.service';
 export * from './product-brand.service';
+export * from './warehouse.service';
+export * from './location.service';

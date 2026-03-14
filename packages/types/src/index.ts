@@ -29,3 +29,5 @@ export * from './lib/product';
 export * from './lib/product-category';
 
 export * from './lib/product-brand';
+
+export * from './lib/warehouse';
